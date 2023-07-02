@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestVowelOrConsonant(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.009-vowel-or-consonant.python.main'
+        self.module_name = 'projects.009-vowel-or-consonant.python.main'
 
     @patch('builtins.input')
     def test_ok_vowel(self, mock_input):

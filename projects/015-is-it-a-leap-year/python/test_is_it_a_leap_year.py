@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestWhatColorIsThatSquare(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.015-is-it-a-leap-year.python.main'
+        self.module_name = 'projects.015-is-it-a-leap-year.python.main'
 
     @patch('builtins.input')
     def test_ok_leap(self, mock_input):
