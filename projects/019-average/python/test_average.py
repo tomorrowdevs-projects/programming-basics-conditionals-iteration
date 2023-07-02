@@ -15,7 +15,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestNextDay(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.019-average.python.main'
+        self.module_name = 'projects.019-average.python.main'
 
     @patch('builtins.input')
     def test_ok(self, mock_inputs):
@@ -23,7 +23,7 @@ class TestNextDay(TestCase):
         Check if return the correct result
         """
 
-        mock_inputs.side_effect = [50, 2, 3, 10, 0]
+        mock_inputs.side_effect = ['50', '2', '3', '10', '0']
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)

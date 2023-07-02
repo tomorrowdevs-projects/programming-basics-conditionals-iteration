@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestCellPhoneBill(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.014-cell-phone-bill.python.main'
+        self.module_name = 'projects.014-cell-phone-bill.python.main'
 
     @patch('builtins.input')
     def test_ok_base(self, mock_inputs):

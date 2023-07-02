@@ -6,8 +6,8 @@ Then your program should display the number of days in that month.
 Display **28 or 29 days** for **February** so that leap years are addressed.  
 
 Example:  
-Input =   
-Output = 
+Input = April  
+Output = 30
 
 # Documentation
 
