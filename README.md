@@ -1,13 +1,23 @@
-# TomorrowDevs Programming Basics Learning Path
+# **TomorrowDevs Programming Basics Learning Path**
+## **Conditionals and Iterations** 
 
-This is a repository containing all the projects for **TomorrowDevs** students to learn Programming Basics. <br />
-This repo aims to give students a way to discover, study, and implement basic data structures, algorithms, patterns, user interfaces, etc.
+This repository is part of the full Programming Basics Learning Path by Tomorrowdevs.
 
-Before committing anything to that repo, please read the contribution guide at [CONTRIBUTING.md](/CONTRIBUTING.md).
+The aim of this path is to allow people to learn Programming skills by building practical projects.
+## **Description**
 
-<hr>
+The final purpose of this path is to allow you to build a first real-world project, that you can use in your everyday life.
+In this case, you will build a Travel Expense Manager, just using Variables, expressions, statements, string, conditionals and iterations.
 
-<img src="./logo-td.png">
+In order to achieve that, youl will be guided into different steps and tasks, composed by a combination of theory and coding.
+
+Additionally, you will learn some Soft Skills for software developers.
+
+# 🚀 **[Jump to the Learning Path!](LEARNING-PATH.md)** 💻
+
+
+## **Credits** 
+<img src="./logo-td.png" width="300">
 
 ### A Mentorship program for developers
 
@@ -30,8 +40,3 @@ Need help in solution development, guidance, training or capacity building, care
 We are a community of Software Engineers with years of technical and leadership experience in a diverse range of technologies and domains. 
 
 Let us know what problem you are facing at <b>http://www.tomorrowdevs.com</b> and we can schedule a consultation meeting to help you get through it.
-
-## Contributions Welcome
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
-
-If you find any bug in the code or have any improvements in mind then feel free to generate a pull request.
