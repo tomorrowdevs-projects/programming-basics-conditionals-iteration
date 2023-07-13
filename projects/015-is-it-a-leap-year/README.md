@@ -14,6 +14,9 @@ The rules for determining whether a year is a leap year follow:
 Write a program that **reads a year** from the user and 
 displays a message indicating **whether it is a leap year**.
 
+Example:  
+Input: 2024  
+Output: Leap year
 
 # Documentation
 

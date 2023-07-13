@@ -15,7 +15,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestBirthDateToAstrologicalSign(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.013-birth-date-to-astrological-sign.python.main'
+        self.module_name = 'projects.013-birth-date-to-astrological-sign.python.main'
 
     @patch('builtins.input')
     def test_ok_capricorn(self, mock_inputs):

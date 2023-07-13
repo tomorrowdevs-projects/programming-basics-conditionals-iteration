@@ -14,7 +14,7 @@ is_file_empty = os.stat(file_path).st_size == 0
 class TestMonthNameToNumberOfDays(TestCase):
 
     def setUp(self) -> None:
-        self.module_name = 'projects.m1.010-month-name-to-number-of-days.python.main'
+        self.module_name = 'projects.010-month-name-to-number-of-days.python.main'
 
     @patch('builtins.input')
     def test_ok_30(self, mock_input):
