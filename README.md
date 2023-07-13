@@ -6,12 +6,13 @@ This repository is part of the full Programming Basics Learning Path by Tomorrow
 The aim of this path is to allow people to learn Programming skills by building practical projects.
 ## **Description**
 
-The final purpose of this path is to allow you to build a first real-world project, that you can use in your everyday life.
-In this case, you will build a Travel Expense Manager, just using Variables, expressions, statements, string, conditionals and iterations.
+The final purpose of this path is to allow you to build another real-world project that you can use in your life and present it as a project for your interviews.
+
+In this case, you will build a **Travel Expense Manager**, using Variables, expressions, statements, string, conditionals and iterations.
 
 In order to achieve that, youl will be guided into different steps and tasks, composed by a combination of theory and coding.
 
-Additionally, you will learn some Soft Skills for software developers.
+Additionally, you will learn some **Soft Skills** for software developers.
 
 # 🚀 **[Jump to the Learning Path!](LEARNING-PATH.md)** 💻
 
