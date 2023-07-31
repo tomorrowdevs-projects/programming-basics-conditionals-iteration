@@ -60,10 +60,10 @@ do {
 } while ( isNaN(positionPiece[0]) != true || positionPiece.length != 2 || isNaN(Number(positionPiece[1])) != false || Number(positionPiece[1]) < 1  || Number(positionPiece[1]) > 8 );
     
 const column = positionPiece[0].charCodeAt(); // Using the unicode codificatione of the char to manipulate it as a number
-const row = positionPiece[1];
+const row = Number(positionPiece[1]);
 
 // I check for odd and even letters, the same for numbers, and then I return an output in console
-if ((column % 2) != 0) {
+/* if ((column % 2) != 0) {
 
     switch ((row % 2) != 0) {
         case true:
@@ -81,4 +81,14 @@ if ((column % 2) != 0) {
         default: console.log("The square is: Black!");
     }
 
-}
+} */
+
+positionPiece = column + row;
+
+if (positionPiece % 2 != 0) {   
+    console.log("The square is: White!");
+
+} else {
+     console.log("The square is: Black!");
+    }
+
