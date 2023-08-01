@@ -23,7 +23,7 @@ class TestNextDay(TestCase):
         Check if return the correct result
         """
 
-        mock_inputs.side_effect = [1.5, 2, 3, 50, '']
+        mock_inputs.side_effect = [1, 2, 3, 50, '']
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
