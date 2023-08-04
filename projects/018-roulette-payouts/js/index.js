@@ -38,8 +38,6 @@ console.log("Il numero estratto è: " + spinResultNumber);
 console.log("Paga: " + spinResultNumber);
 
 const red = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36];
-const green = [0,"00"];
-
 
 
 if (spinResultNumber != 0 && spinResultNumber != "00") {
@@ -51,9 +49,3 @@ if (spinResultNumber != 0 && spinResultNumber != "00") {
     ((spinResultNumber / 2) >= 9.5) ? console.log("Paga: 19 - 36") : console.log("Paga: 1 - 18");
 
 } 
-else {
-
-    console.log("Paga: Verde");
-
-}
-
