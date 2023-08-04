@@ -1,9 +1,9 @@
-#ask to user a day and a month
+# ask to user a day and month of birth
 month = input('type a month: ').capitalize()
 day = int(input('type a day: '))
    
 
-# if else statements that returns the zodiacal sign by comparing the day typed by user with a range of numbers and the month typed with a string
+# if statements that returns the zodiacal sign on basis of day and month typed by user
 if 22 <= day <= 31 and month == 'December' or 1 <= day <= 19 and month == 'January':
     sign = 'Capricorn'
 elif 20 <= day <= 31 and month == 'January' or 1 <= day <= 18 and month == 'February':
