@@ -6,6 +6,7 @@ const userLetter = prompt(
 ).toLowerCase();
 
 // I used a ternary operator to create the various options and the OR operator
+// An array could probably also be used to group all consonants
 const typeUserLetter =
     userLetter === 'a' ||
     userLetter === 'e' ||
