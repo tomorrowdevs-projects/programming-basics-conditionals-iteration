@@ -32,7 +32,7 @@ python -m unittest python/test_average.py
 ```
 
 or run the command from the terminal  
-`python -m unittest projects/m1/019-average/python/test_average.py`
+`python -m unittest projects/019-average/python/test_average.py`
 
 
 # Deadline
