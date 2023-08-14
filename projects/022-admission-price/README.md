@@ -37,7 +37,7 @@ python -m unittest python/test_admission_price.py
 ```
 
 or run the command from the terminal  
-`python -m unittest projects/m1/022-admission-price/python/test_admission_price.py`
+`python -m unittest projects/022-admission-price/python/test_admission_price.py`
 
 
 # Deadline
