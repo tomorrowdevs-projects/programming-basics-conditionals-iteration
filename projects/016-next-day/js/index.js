@@ -8,29 +8,6 @@ const getDay = parseFloat(prompt('Enter a day between 1 and 31'));
 const leapYear =
     (getYear % 400 === 0 && getYear % 100 !== 0) || getYear % 4 === 0;
 
-if (getYear % 400 === 0) {
-    `
-    ${getYear === leapYear}`;
-} else if (getYear % 100 === 0) {
-    `${getYear !== leapYear}`;
-} else if (getYear % 4 === 0) {
-    `${getYear === leapYear}`;
-} else {
-    `${getYear !== leapYear}`;
-}
-
-// if (
-//     getDay == 30 &&
-//     (getMonth == 4 || getMonth == 6 || getMonth == 9 || getMonth == 11)
-// ) {
-//     alert(`${getYear}-${getMonth + 1}-01`);
-// } else if (
-//     getDay < 30 &&
-//     (getMonth == 4 || getMonth == 6 || getMonth == 9 || getMonth == 11)
-// ) {
-//     alert(`${getYear}-${getMonth}-${getDay + 1}`);
-// }
-
 const userDay =
     getDay == 30 &&
     (getMonth == 4 || getMonth == 6 || getMonth == 9 || getMonth == 11)
