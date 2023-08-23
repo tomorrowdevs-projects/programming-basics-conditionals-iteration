@@ -1,9 +1,8 @@
 
-let maximumNumber = Math.trunc(Math.random()*100) + 1;
-console.log(maximumNumber + " <=== Valore di partenza!");
-
+let maximumNumber = 0;
 let updateCounter= 0;
-for (let i = 0; i < 99; i++) {
+
+for (let i = 0; i < 100; i++) {
     const newNumber = Math.trunc(Math.random()*100) + 1;
     if (newNumber > maximumNumber) {
         console.log(newNumber + " <=== Update!");
