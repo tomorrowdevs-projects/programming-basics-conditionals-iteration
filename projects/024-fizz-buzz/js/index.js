@@ -20,12 +20,12 @@ Each answer should be displayed on its own line.
 
 for (let i = 1; i <= 100; i++) {
     if (i % 15 === 0) {
-        console.log(`fizz buzz`);
+        console.log(`fizz buzz`); // If the number is divisible by 15, print Fizz Buzz
     } else if (i % 5 === 0) {
-        console.log('buzz');
+        console.log('buzz'); // If the number is divisible by 5, print Buzz
     } else if (i % 3 === 0) {
-        console.log('fizz');
+        console.log('fizz'); // If the number is divisible by 3, print Fizz
     } else {
-        console.log(i);
+        console.log(i); // If the number is not a multiple of either 3 or 5, print the number itself
     }
 }
