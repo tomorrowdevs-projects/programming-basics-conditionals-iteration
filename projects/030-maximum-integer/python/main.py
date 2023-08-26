@@ -1,7 +1,3 @@
-'''
-Crea un programma che inizi selezionando un numero intero casuale compreso tra 1 e 100.
-Salva questo numero intero come numero massimo incontrato finora
-'''
 import random
 
 maximum_number = random.choice(range(1, 101))
