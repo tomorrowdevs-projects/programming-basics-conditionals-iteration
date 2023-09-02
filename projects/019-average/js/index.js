@@ -27,5 +27,5 @@ if (count === 0) {
     `No value was entered`;
 } else {
     const average = sum / count;
-    alert(`(Average of entered values: ${average.toFixed(2)}`);
+    alert(`Average of entered values: ${average.toFixed(2)}`);
 }
