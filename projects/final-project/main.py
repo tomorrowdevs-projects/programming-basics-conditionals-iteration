@@ -6,9 +6,26 @@ Ask the user for the number of travel days and store it in a numeric variable.
 Ask the user for the total budget available for the trip and store it in a numeric variable.
 '''
 
-travel_days = int(input('Enter the total days for the trip:\n'))
-total_budget = int(input('Enter the total budget available in $ for the trip:\n'))
-print(f"Great! Your trip will last {travel_days} days with an initial budget of ${total_budget}")
+travel_days = input('Enter the total days for the trip:\n')
+while travel_days.isnumeric() is False:
+    print('Only numeric characters are accepted!')
+    travel_days = input('Enter the total days for the trip:\n')
+
+total_budget = input('Enter the total budget available in $ for the trip:\n')
+total_budget = total_budget.replace(',', '.')
+while True:
+    try:
+        total_budget = float(total_budget)
+        break
+    except ValueError:
+        print('Only numeric characters are accepted!')
+        total_budget = input('Enter the total budget available in $ for the trip:\n')
+        total_budget = total_budget.replace(',', '.')
+
+travel_days = int(travel_days)
+total_budget = float(total_budget)
+print(f"Great! Your trip will last {travel_days} days with an initial budget of $""{:.2f}".format(total_budget))
+
 
 total_expenses = 0
 total_meal_expenses = 0
@@ -25,9 +42,38 @@ Use the assignment operator (+=) to accumulate daily expenses into total variabl
 '''
 
 for day in range(travel_days):
-    meal_expenses = int(input(f'Enter meal expenses in $ for day {i}: '))
-    transport_expenses = int(input(f'Enter transport expenses in $ for day {i}: '))
-    accommodation_expenses = int(input(f'Enter accommodation expenses in $ for day {i}: '))
+    meal_expenses = input(f'Enter meal expenses in $ for day {i}: ')
+    meal_expenses = meal_expenses.replace(',', '.')
+    while True:
+        try:
+            meal_expenses = float(meal_expenses)
+            break
+        except ValueError:
+            print('Only numeric characters are accepted!')
+            meal_expenses = input(f'Enter meal expenses in $ for day {i}: ')
+            meal_expenses = meal_expenses.replace(',', '.')
+
+    transport_expenses = input(f'Enter transport expenses in $ for day {i}: ')
+    transport_expenses = transport_expenses.replace(',', '.')
+    while True:
+        try:
+            transport_expenses = float(transport_expenses)
+            break
+        except ValueError:
+            print('Only numeric characters are accepted!')
+            transport_expenses = input(f'Enter transport expenses in $ for day {i}: ')
+            transport_expenses = transport_expenses.replace(',', '.')
+
+    accommodation_expenses = input(f'Enter accommodation expenses in $ for day {i}: ')
+    accommodation_expenses = accommodation_expenses.replace(',', '.')
+    while True:
+        try:
+            accommodation_expenses = float(accommodation_expenses)
+            break
+        except ValueError:
+            print('Only numeric characters are accepted!')
+            accommodation_expenses = input(f'Enter accommodation expenses in $ for day {i}: ')
+            accommodation_expenses = accommodation_expenses.replace(',', '.')
     i += 1
     total_meal_expenses += meal_expenses
     total_transport_expenses += transport_expenses
@@ -56,9 +102,40 @@ for day in range(travel_days):
             total_accommodation_expenses -= accommodation_expenses
             i -= 1
             print('Enter the correct expense for each category')
-            meal_expenses = int(input(f'Enter meal expenses in $ for day {i}: '))
-            transport_expenses = int(input(f'Enter transport expenses in $ for day {i}: '))
-            accommodation_expenses = int(input(f'Enter accommodation expenses in $ for day {i}: '))
+
+            meal_expenses = input(f'Enter meal expenses in $ for day {i}: ')
+            meal_expenses = meal_expenses.replace(',', '.')
+            while True:
+                try:
+                    meal_expenses = float(meal_expenses)
+                    break
+                except ValueError:
+                    print('Only numeric characters are accepted!')
+                    meal_expenses = input(f'Enter meal expenses in $ for day {i}: ')
+                    meal_expenses = meal_expenses.replace(',', '.')
+
+            transport_expenses = input(f'Enter transport expenses in $ for day {i}: ')
+            transport_expenses = transport_expenses.replace(',', '.')
+            while True:
+                try:
+                    transport_expenses = float(transport_expenses)
+                    break
+                except ValueError:
+                    print('Only numeric characters are accepted!')
+                    transport_expenses = input(f'Enter transport expenses in $ for day {i}: ')
+                    transport_expenses = transport_expenses.replace(',', '.')
+
+            accommodation_expenses = input(f'Enter accommodation expenses in $ for day {i}: ')
+            accommodation_expenses = accommodation_expenses.replace(',', '.')
+            while True:
+                try:
+                    accommodation_expenses = float(accommodation_expenses)
+                    break
+                except ValueError:
+                    print('Only numeric characters are accepted!')
+                    accommodation_expenses = input(f'Enter accommodation expenses in $ for day {i}: ')
+                    accommodation_expenses = accommodation_expenses.replace(',', '.')
+
             i += 1
             total_meal_expenses += meal_expenses
             total_transport_expenses += transport_expenses
@@ -67,14 +144,46 @@ for day in range(travel_days):
             question = input('do you want to correct something? (yes or no)\n')
 
         elif user_choice == 2:
-            total_meal_expenses -= 0
-            total_transport_expenses -= 0
-            total_accommodation_expenses -= 0
+            total_meal_expenses = 0
+            total_transport_expenses = 0
+            total_accommodation_expenses = 0
             i = 1
             print('Enter the correct expense for each category')
-            meal_expenses = int(input(f'Enter meal expenses in $ for day {i}: '))
-            transport_expenses = int(input(f'Enter transport expenses in $ for day {i}: '))
-            accommodation_expenses = int(input(f'Enter accommodation expenses in $ for day {i}: '))
+
+            for day in range(travel_days):
+                meal_expenses = input(f'Enter meal expenses in $ for day {i}: ')
+                meal_expenses = meal_expenses.replace(',', '.')
+                while True:
+                    try:
+                        meal_expenses = float(meal_expenses)
+                        break
+                    except ValueError:
+                        print('Only numeric characters are accepted!')
+                        meal_expenses = input(f'Enter meal expenses in $ for day {i}: ')
+                        meal_expenses = meal_expenses.replace(',', '.')
+
+                transport_expenses = input(f'Enter transport expenses in $ for day {i}: ')
+                transport_expenses = transport_expenses.replace(',', '.')
+                while True:
+                    try:
+                        transport_expenses = float(transport_expenses)
+                        break
+                    except ValueError:
+                        print('Only numeric characters are accepted!')
+                        transport_expenses = input(f'Enter transport expenses in $ for day {i}: ')
+                        transport_expenses = transport_expenses.replace(',', '.')
+
+                accommodation_expenses = input(f'Enter accommodation expenses in $ for day {i}: ')
+                accommodation_expenses = accommodation_expenses.replace(',', '.')
+                while True:
+                    try:
+                        accommodation_expenses = float(accommodation_expenses)
+                        break
+                    except ValueError:
+                        print('Only numeric characters are accepted!')
+                        accommodation_expenses = input(f'Enter accommodation expenses in $ for day {i}: ')
+                        accommodation_expenses = accommodation_expenses.replace(',', '.')
+
             i += 1
             total_meal_expenses += meal_expenses
             total_transport_expenses += transport_expenses
@@ -102,10 +211,10 @@ Also show if the available budget has been respected or expenses have been excee
 print('Here the summary of travel expenses:\n')
 print('|    meal    |    transport    |    accomodation    |    total expenses    |')
 print('----------------------------------------------------------------------------')
-print(f'|      -{total_meal_expenses}    |         -{total_transport_expenses}      |      -{total_accommodation_expenses}            |      -{total_expenses}              |\n' )
+print(f'|      -{total_meal_expenses}    |         -{total_transport_expenses}      |      -{total_accommodation_expenses}            |      -{total_expenses}              |\n')
 
 final_budget = total_budget - total_expenses
 if final_budget >= 0:
-    print(f"Your initial budget covered all expenses. Here's your final budget: {final_budget}")
+    print(f"Your initial budget covered all expenses. Here's your final budget: $""{:.2f}".format(final_budget))
 else:
-    print(f"Your initial budget didn't cover all expenses. Here's your final budget: {final_budget}")
+    print(f"Your initial budget didn't cover all expenses. Here's your final budget: $""{:.2f}".format(final_budget))
