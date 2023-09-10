@@ -20,6 +20,6 @@ while (true) {
 }
 
 let nextYCoordinate = parseFloat(prompt(`Enter a new coordinate y `));
-
+ll
 
 
