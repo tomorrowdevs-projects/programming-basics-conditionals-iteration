@@ -1,16 +1,5 @@
 'use strict';
-/*Month Name to Number of Days
-The length of a month varies from 28 to 31 days.
 
-1) In this exercise you will create a program that reads the name of a month from the user as a string.
-2)Then your program should display the number of days in that month.
-3) Display 28 or 29 days for February so that leap years are addressed.
-
-Example:
-Input = April
-Output = 30*/
-
-// I used the .toLowerCase() method to convert the prompt to LowerCase
 const month = prompt(`Please enter the name of a month`).toLowerCase();
 
 if (
