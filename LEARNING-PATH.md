@@ -48,13 +48,13 @@ Read the following chapters to the key concepts of this specific path
 
 Code these exercises to capture the concepts you just learned:
 
-- [ ] [Month name to Number of day](./projects/010-month-name-to-number-of-days/)
-- [ ] [What color is that square](./projects/012-what-color-is-that-square/)
-- [ ] [Cell Phone Bill](./projects/014-cell-phone-bill/)
-- [ ] [Admission Price](./projects/022-admission-price/)
-- [ ] [Fizz Buzz](./projects/024-fizz-buzz/)
-- [ ] [Is a string a palindrome](./projects/026-is-a-string-a-palindrome/)
-- [ ] [Coin Flip Simulation](./projects/031-coin-flip-simulation/)
+- [ ] [Month name to Number of day](projects/002-month-name-to-number-of-days/)
+- [ ] [What color is that square](projects/004-what-color-is-that-square/)
+- [ ] [Cell Phone Bill](projects/006-cell-phone-bill/)
+- [ ] [Admission Price](projects/014-admission-price/)
+- [ ] [Fizz Buzz](projects/016-fizz-buzz/)
+- [ ] [Is a string a palindrome](projects/018-is-a-string-a-palindrome/)
+- [ ] [Coin Flip Simulation](projects/023-coin-flip-simulation/)
 
 
 ### **Additional tasks**
