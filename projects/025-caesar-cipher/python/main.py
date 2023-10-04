@@ -1,12 +1,12 @@
 message = input('insert a message to encode or decode: ')
 number = int(input('insert a positive number to encode or negative to decode: '))
 
-ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
 new_message = ''
-NUMBERS = '0123456789'
+numbers = '0123456789'
 
 for i in message:
-    if i in NUMBERS or i == ' ':
+    if i in numbers or i == ' ':
         new_message += i
     elif i == 'à':
         i = 'a'
@@ -18,11 +18,11 @@ for i in message:
         i = 'o'
     elif i == 'ù':
         i = 'u'
-    for e in ALPHABET:
+    for e in alphabet:
         if e == i:
-            index = ALPHABET.index(e)
+            index = alphabet.index(e)
             if index + number >= 26:
-                new_message += ALPHABET [(index + (number)) % 26]
+                new_message += alphabet [(index + (number)) % 26]
             else: 
-                new_message += ALPHABET[index + (number)]
+                new_message += alphabet[index + (number)]
 print(new_message)
