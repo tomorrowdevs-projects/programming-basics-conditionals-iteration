@@ -9,4 +9,4 @@ while q != 0:
     r = q % 2
     result += str(r)
     q = q // 2
-print(f'The binary value of the number is : {result}')
+print(f'The binary value of the number is : {result[::-1]}')
