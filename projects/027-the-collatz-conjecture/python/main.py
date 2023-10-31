@@ -3,7 +3,7 @@ user_input = None
 result = ''
 
 while user_input != 0:
-    user_input = input('type a positive number or 0 to end: ')
+    user_input = input('Enter a positive number or press "0" to end: ')
     if user_input == '':
         print('Empty field')
     elif user_input.isnumeric() == False:
