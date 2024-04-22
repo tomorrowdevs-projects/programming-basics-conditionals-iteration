@@ -23,7 +23,7 @@ class TestAdmissionPrice(TestCase):
         Check if return the correct result
         """
 
-        mock_inputs.side_effect = [1, 2, 3, 50, '']
+        mock_inputs.side_effect = [1, 2, 3, 50, '','\n']
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -38,7 +38,7 @@ class TestAdmissionPrice(TestCase):
         Check if return the correct result
         """
 
-        mock_inputs.side_effect = [0, 78, 3, 45, '']
+        mock_inputs.side_effect = [0, 78, 3, 45, '','\n']
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -53,7 +53,7 @@ class TestAdmissionPrice(TestCase):
         Check if return the correct result
         """
 
-        mock_inputs.side_effect = [0, '']
+        mock_inputs.side_effect = [0, '','\n']
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
@@ -68,7 +68,7 @@ class TestAdmissionPrice(TestCase):
         Check if return the correct result
         """
 
-        mock_inputs.side_effect = ['']
+        mock_inputs.side_effect = ['','\n']
 
         with patch('sys.stdout', new_callable=io.StringIO) as mock_print:
             sys.modules.pop(self.module_name, None)
