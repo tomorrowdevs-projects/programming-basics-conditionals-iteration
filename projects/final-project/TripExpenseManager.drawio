@@ -1,0 +1,415 @@
+<mxfile host="Electron" modified="2024-04-29T13:57:46.078Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="TrXDr2uuEJIp7FZ7cZKx" version="24.2.5" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1067" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="obsr1UD8wb83Xn88yDnc-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="INH1EZwyulUJPMw1Bkqm-0" target="INH1EZwyulUJPMw1Bkqm-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INH1EZwyulUJPMw1Bkqm-0" value="START" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="354" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INH1EZwyulUJPMw1Bkqm-7" value="Ask the user for the&lt;div&gt;trip duration in days&lt;/div&gt;&lt;div&gt;and save into a variable&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="354" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INH1EZwyulUJPMw1Bkqm-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="INH1EZwyulUJPMw1Bkqm-7" target="INH1EZwyulUJPMw1Bkqm-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="INH1EZwyulUJPMw1Bkqm-11" target="obsr1UD8wb83Xn88yDnc-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="INH1EZwyulUJPMw1Bkqm-11" value="Ask the user for the total budget of the trip&lt;div&gt;and save it into a variable&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="354" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="INH1EZwyulUJPMw1Bkqm-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="INH1EZwyulUJPMw1Bkqm-18" target="INH1EZwyulUJPMw1Bkqm-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INH1EZwyulUJPMw1Bkqm-18" value="Ask the user for the category of the expense&lt;div&gt;(ACCOMODATION, TRANSPORT,&lt;/div&gt;&lt;div&gt;MEAL,&lt;/div&gt;&lt;div&gt;SOUVENIRS,&lt;/div&gt;&lt;div&gt;UNFORSEENS)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="354" y="680" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="INH1EZwyulUJPMw1Bkqm-21" target="obsr1UD8wb83Xn88yDnc-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="INH1EZwyulUJPMw1Bkqm-21" value="Ask the user for a description of the expense and save it&lt;div&gt;in variable (D[x]_[prog]_[cat]_DES)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="354" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-2" target="INH1EZwyulUJPMw1Bkqm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-2" value="Ask the user for the day and save it to a variable" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="354" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-10" target="obsr1UD8wb83Xn88yDnc-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-10" value="Ask the user for the expnse and save it&lt;div&gt;in variable (D[x]_[prog]_[cat]_EXP)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="354" y="970" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-12" target="obsr1UD8wb83Xn88yDnc-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-12" value="Update the total daily expense for each category and the total expense of the day" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="354" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-15" target="INH1EZwyulUJPMw1Bkqm-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="1270" />
+              <mxPoint x="250" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-18" value="SAME" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-17">
+          <mxGeometry x="-0.843" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-15" target="INH1EZwyulUJPMw1Bkqm-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="1270" />
+              <mxPoint x="570" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-65" value="DIFFERENT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-64">
+          <mxGeometry x="-0.8986" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-15" target="obsr1UD8wb83Xn88yDnc-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-68" value="MODIFY" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-67">
+          <mxGeometry x="0.025" y="7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-15" target="obsr1UD8wb83Xn88yDnc-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="1560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="1310" />
+              <mxPoint x="270" y="1960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-81" value="NEW DAY" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-80">
+          <mxGeometry x="-0.4503" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-15" value="New expense&lt;div&gt;for same/different category, modify or new day&lt;span style=&quot;background-color: initial;&quot;&gt;?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="342" y="1230" width="144" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-28" target="obsr1UD8wb83Xn88yDnc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-32" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-31">
+          <mxGeometry x="-0.8157" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-129" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-28" target="obsr1UD8wb83Xn88yDnc-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-28" value="The duration of the trip&lt;div&gt;has been reached?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="117" y="1920" width="144" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-33" target="obsr1UD8wb83Xn88yDnc-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-33" value="Update the total expense of the trip" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="361" y="2400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-41" target="obsr1UD8wb83Xn88yDnc-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-46" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-45">
+          <mxGeometry x="-0.4396" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-41" target="obsr1UD8wb83Xn88yDnc-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-63" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-62">
+          <mxGeometry x="-0.3093" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-41" value="Budget&amp;lt;total expense?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="344" y="2520" width="154" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-44" target="obsr1UD8wb83Xn88yDnc-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="137" y="2800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="2685" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-49" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-48">
+          <mxGeometry y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-44" target="obsr1UD8wb83Xn88yDnc-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-54" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-53">
+          <mxGeometry x="0.3853" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-44" value="User wants&amp;nbsp;&lt;div&gt;a detailed report?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="149" y="2640" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-47" value="Print the daily expense for each category, the total daily expense for each day and the total expense of the trip along with a message that the budget has been exceeded and the difference between budget and total trip expence" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="17" y="2830" width="185" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-52" value="Print the the total daily expense for each category and the total expense of the trip along with a message that the budget has been exceeded and the difference between budget and total trip expence" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="227" y="2830" width="170" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-59" target="obsr1UD8wb83Xn88yDnc-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="527" y="2800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="2695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-56" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-55">
+          <mxGeometry y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-59" target="obsr1UD8wb83Xn88yDnc-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-58" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-57">
+          <mxGeometry x="0.3853" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-59" value="User wants&amp;nbsp;&lt;div&gt;a detailed report?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="557" y="2650" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-60" value="Print the daily expense for each category, the total daily expense for each day and the total expense of the trip along with a message that the budget has been sticked and the difference between budget and total trip expence" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="407" y="2830" width="185" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-61" value="Print the the total daily expense for each day and the total expense of the trip along with a message that the budget has been that the budget has been sticked and the difference between budget and total trip expence" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="657" y="2830" width="170" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-66" target="obsr1UD8wb83Xn88yDnc-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-75" value="MODIFY" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-70">
+          <mxGeometry y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-123" target="obsr1UD8wb83Xn88yDnc-116">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1510" as="sourcePoint" />
+            <mxPoint x="337" y="2160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="2160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-66" target="obsr1UD8wb83Xn88yDnc-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-127" value="DELETE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-126">
+          <mxGeometry x="-0.5714" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-66" value="Modify or delete an existing?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="342" y="1370" width="144" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-69" target="obsr1UD8wb83Xn88yDnc-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-69" value="Print the full report" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="1380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-73" target="obsr1UD8wb83Xn88yDnc-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-73" value="Ask the user the day of the expense and the progressive number" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-78" target="obsr1UD8wb83Xn88yDnc-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-85" value="DESCRIPTION" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-84">
+          <mxGeometry x="-0.0625" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-78" target="obsr1UD8wb83Xn88yDnc-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-94" value="EXPENSE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-92">
+          <mxGeometry x="-0.371" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-78" target="obsr1UD8wb83Xn88yDnc-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-100" value="CATEGORY" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-99">
+          <mxGeometry x="-0.2966" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-78" value="Modify category, expense or description?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="1610" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-83" target="obsr1UD8wb83Xn88yDnc-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="2090" />
+              <mxPoint x="890" y="2090" />
+              <mxPoint x="890" y="1190" />
+              <mxPoint x="414" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-83" value="Ask the user for a new description and save it to the variable&lt;div&gt;(D[x]_[prog]_[cat]_DES)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="1840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-87" target="obsr1UD8wb83Xn88yDnc-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-87" value="Ask the user for a new expense and save it to the variable&lt;div&gt;(D[x]_[prog]_[cat]_EXP)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="750" y="1780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-91" target="obsr1UD8wb83Xn88yDnc-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-91" value="Subtract the variable&lt;div&gt;(D[x]_[prog]_[cat]_EXP)&lt;br&gt;&lt;/div&gt;&lt;div&gt;from the total category daily expense&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="750" y="1694" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-95" target="obsr1UD8wb83Xn88yDnc-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="2090" />
+              <mxPoint x="890" y="2090" />
+              <mxPoint x="890" y="1190" />
+              <mxPoint x="414" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-95" value="Update category daily expense an total daily expense" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="750" y="1870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-98" target="obsr1UD8wb83Xn88yDnc-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-98" value="Subtract the variable&lt;div&gt;(D[x]_[prog]_[cat]_EXP)&lt;br&gt;&lt;/div&gt;&lt;div&gt;from the total category daily expense&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="429" y="1694" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-101" target="obsr1UD8wb83Xn88yDnc-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-101" value="Ask the user for a new category and save it to the variable&lt;div&gt;(D[x]_[prog]_[new cat]_EXP)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="429" y="1790" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-103" target="obsr1UD8wb83Xn88yDnc-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-103" value="Delete the variable&lt;div&gt;(D[x]_[prog]_[cat]_EXP)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="429" y="1900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-105" target="obsr1UD8wb83Xn88yDnc-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="489" y="2090" />
+              <mxPoint x="890" y="2090" />
+              <mxPoint x="890" y="1190" />
+              <mxPoint x="414" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-105" value="Update category daily expense an total daily expense" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="429" y="2010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-116">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="2230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-116" value="Subtract the variable&lt;div&gt;(D[x]_[prog]_[cat]_EXP)&lt;br&gt;&lt;/div&gt;&lt;div&gt;from the total category daily expense and from the total daily expense&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="2130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-120" target="obsr1UD8wb83Xn88yDnc-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-120" value="Delete the variables&lt;div&gt;(D[x]_[prog]_[cat]_EXP&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;D[x]_[prog]_[cat]_DES)&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="2230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-121" target="obsr1UD8wb83Xn88yDnc-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="2420" />
+              <mxPoint x="890" y="2420" />
+              <mxPoint x="890" y="1190" />
+              <mxPoint x="414" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-121" value="Rename the variables of the day by shifting them of 1" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="2340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-123" value="Print the full report" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="320" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-128" target="obsr1UD8wb83Xn88yDnc-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="2120" />
+              <mxPoint x="100" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-131" value="NEW" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-130">
+          <mxGeometry x="-0.975" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-128" target="obsr1UD8wb83Xn88yDnc-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-133" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-132">
+          <mxGeometry x="-0.7391" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="obsr1UD8wb83Xn88yDnc-128" target="obsr1UD8wb83Xn88yDnc-66">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="2120" />
+              <mxPoint x="310" y="1410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-135" value="CHANGES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="obsr1UD8wb83Xn88yDnc-134">
+          <mxGeometry x="-0.9208" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obsr1UD8wb83Xn88yDnc-128" value="New expenses or changes?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="149" y="2080" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
