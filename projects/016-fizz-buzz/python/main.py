@@ -1,6 +1,4 @@
-number=0
-while number<=99:
-    number+=1
+for number in range(1,101):
     if number%15==0:
         print("fizz buzz")
     elif number%5==0:
