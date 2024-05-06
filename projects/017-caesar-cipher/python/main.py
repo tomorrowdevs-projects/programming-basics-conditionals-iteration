@@ -1,18 +1,17 @@
 message=input("Please, enter the message you want to cipher:")
 #CHECK FOR CORRECT INPUT#
 #Uncomment line 4 and comment lines from 5 to 11 to pass the test (mock input pass an int value so removeprefix rise an error)
-#shift=input("Please, enter the shift factor:")
+# shift=input("Please, enter the shift factor:")
 while True:
     shift=input("Please, enter the shift factor:")
-    if shift.removeprefix('-').isdigit():
+    if shift.removeprefix('-').isdecimal():
         shift=int(shift)
         break
     else:
         print("Please, enter a numeric shift (or press ctrl+c to quit):")
 
-index=0
 new_message=""
-while index<=len(message)-1:
+for index in range(0,len(message)):
     char=message[index]
     if char.isalpha():
         char=ord(char)
@@ -33,5 +32,4 @@ while index<=len(message)-1:
         new_message=new_message+chr(char)
     else:
         new_message=new_message+char
-    index+=1
 print(new_message)
