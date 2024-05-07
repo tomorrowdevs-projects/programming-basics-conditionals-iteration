@@ -1,170 +1,146 @@
 #---TRIP EXPENSE MANAGER---#
 
 #---Welcome message and note about the currency---#
-print('Welcome to the trip expense manager! Please, note that the app doesn\'t use any specific currency, so all expenses have to be\
-inserted in the same currency!\n\n')
+print("""Welcome to the trip expense manager! Please, note that the app doesn't use any specific currency, so all expenses have to be inserted in the same currency!\n\n""")
 
 #---Asking the user for the trip duration---#
-while True:
-    trip_duration=input('Please, enter the trip duration in days:')
-    #Checking user input
-    if len(trip_duration)<1:
-        print('You have inserted a blanck input, please provide a valid number of days\n\n')
-    elif not trip_duration.isdigit():
-        print('You have insert a floating point number or a literal input, plese provide a valid number of days\n\n')
-    else:
-        trip_duration=int(trip_duration)
-        break
+trip_duration=input('Please, enter the trip duration in days:')
+while not trip_duration.isdecimal():
+    trip_duration=input('Please, provide a valid trip duration in days:')
+trip_duration=int(trip_duration)
 
 #---Asking the user for the trip budget---#
-while True:
-    budget=input('Please, enter the trip budget:')
-    #Checking user input
-    if len(budget)<1:
-        print('You have inserted a blanck input, please provide a valid budget\n\n')
-    elif budget.isalpha():
-        print('You have inserted a literal input, please provide a valid budget\n\n')
-    else:
-        budget=float(budget)
-        if budget<=0:
-            print('You have inserted a null or negative input, please provide a valid budget\n\n')
-        else:
-            break
+budget=input('Please, enter the trip budget:')
+while budget.count('.')>1 or not budget.strip('.').isdecimal():
+    budget=input('Please, provide a valid trip budget:')
+budget=float(budget)
 
 #---Initializing the general variables---#
-categories=['accomodation','transports','meals','souvenirs','unforseens']
-categories_abb=['ACC','TRA','MEA','SOU','UNF']
-daily_report=''
-TOT_EXP=0 #grand total expense
-ACC_EXP=0 #accomodation total expense
-TRA_EXP=0 #transport total expense
-MEA_EXP=0 #meal total expense
-SOU_EXP=0 #souvenir total expense
-UNF_EXP=0 #unforseen total expense
-for day in range(1,trip_duration+1): #category and total daily expense
-    assignment='D{}_TOT_EXP=0'.format(day)
-    exec(assignment)
-    for category in categories_abb:
-        assignment='D{}_{}_EXP=0'.format(day,category)
-        exec(assignment)
+grd_tot_exp=0 #grand total expense
+acc_tot_exp=0 #accomodation total expense
+tra_tot_exp=0 #transport total expense
+mea_tot_exp=0 #meal total expense
+sou_tot_exp=0 #souvenir total expense
+unf_tot_exp=0 #unforseen total expense
+acc_exp=list() #daily accomodation expense list
+tra_exp=list() #daily transport expense list
+mea_exp=list() #daily meal expense list
+sou_exp=list() #daily souvenir expense list
+unf_exp=list() #daily unforseen expense list
 
 #---Asking the user for expense---#
 for day in range(1,trip_duration+1):
-    daily_report='{}DAY {}\n'.format(daily_report,day)
-    for i in range(0,len(categories)):
-        while True: #Asking accomodation expense
-            expense=input('Please, enter the {} expense for day {}:'.format(categories[i],day))
-            if len(expense)<1:
-                print('You have inserted a blanck input, please provide a valid expense\n\n')
-            elif expense.isalpha():
-                print('You have inserted literal input, please provide a valid expense\n\n')
-            else:
-                expense=float(expense)
-                if expense<0:
-                    print('You have inserted a negative input, please provide a valid expense\n\n')
-                else:
-                    break
-        assignment='D{}_{}_EXP={:.2f}'.format(day,categories_abb[i],expense)
-        exec(assignment)
-        daily_report='{}Expense for {}:{:.2f}\n'.format(daily_report,categories[i],expense)
-        assignment='D{D}_TOT_EXP+=D{D}_{C}_EXP'.format(D=day,C=categories_abb[i])
-        exec(assignment)
-    daily_report='{}Total expense for the day:{:.2f}\n\n'.format(daily_report,eval('D{}_TOT_EXP'.format(day)))
-#---Performing changes on charges or print report---#
-while True:
-    while True: #Asking the user what he wants to do
-        print('This is the list of the daily expenses that you inserted:')
-        print(daily_report) #printing the expense list
-        operation=input('\nChoose the number relevant to the operation you want to perform: modify expense [1],\
-report [2]:')
-        if len(operation)<1:
-            print('You have inserted a blanck input, please provide a valid number of operation\n\n')
-        elif not operation.isdigit():
-            print('You have insert a floating point number or a literal input, plese provide a valid number of operation\n\n')
-        else:
-            operation=int(operation)
-            if not operation in range(1,3):
-                print('You have entered a not existing number of operation, please enter a valid number of operation\n\n')
-            else:
-                break
+    #Accomodation expense
+    expense=input('Please, enter the accomodation expense for day {}:'.format(day))
+    while expense.count('.')>1 or not expense.strip('.').isdecimal():
+        expense=input('Please, enter a valid accomodation expense for day {}:'.format(day))
+    expense=round(float(expense),2)
+    acc_exp.append(expense)
+
+    #Transports expense
+    expense=input('Please, enter the transports expense for day {}:'.format(day))
+    while expense.count('.')>1 or not expense.strip('.').isdecimal():
+        expense=input('Please, enter a valid transports expense for day {}:'.format(day))
+    expense=round(float(expense),2)
+    tra_exp.append(expense)
+
+    #Meals expense
+    expense=input('Please, enter the meals expense for day {}:'.format(day))
+    while expense.count('.')>1 or not expense.strip('.').isdecimal():
+        expense=input('Please, enter a valid meals expense for day {}:'.format(day))
+    expense=round(float(expense),2)
+    mea_exp.append(expense)
+
+    #Souvenirs expense
+    expense=input('Please, enter the souvenirs expense for day {}:'.format(day))
+    while expense.count('.')>1 or not expense.strip('.').isdecimal():
+        expense=input('Please, enter a valid souvenirs expense for day {}:'.format(day))
+    expense=round(float(expense),2)
+    sou_exp.append(expense)
+
+    #Unforseens expense
+    expense=input('Please, enter the unforseens expense for day {}:'.format(day))
+    while expense.count('.')>1 or not expense.strip('.').isdecimal():
+        expense=input('Please, enter a valid unforseens expense for day {}:'.format(day))
+    expense=round(float(expense),2)
+    unf_exp.append(expense)
+
+#---Building the daily report---#
+daily_report='Accomodation: {}\nTransports: {}\nMeals: {}\nSouvenirs: {}\nUnforseens: {}\n\n'.format(acc_exp,tra_exp,mea_exp,sou_exp,unf_exp)
+
+#---Performing changes on charges or printing report---#
+#Showing user the previous inputs
+operation=1
+while operation==1:
+    #Showing user the previous inputs
+    print('This is the list of the daily expenses that you inserted (note that each list element is sorted by day):')
+    print(daily_report)
+
+    #Asking user for the operation to perform
+    operation=input('Choose the number relevant to the operation you want to perform: modify expense [1], report [2]:')
+    while not (operation=='1' or operation=='2'):
+        operation=input('Please, provide a valid number of operation:')
+    operation=int(operation)
+
+    #Performing the chosen operation
     if operation==1:
-        while True: #Asking the user for the day to be modified
-            day=input('Take a look to the list of the expenses you have inserted and choose the day you want to modify:')
-            if len(day)<1:
-                print('You have inserted a blanck input, please provide a valid day numbert\n\n')
-            elif not day.isdigit():
-                print('You have insert a floating point number or a literal input, plese provide a valid day number\n\n')
-            else:
-                day=int(day)
-                if day>trip_duration:
-                    print('You have exceeded the duration of the trip, please enter a valid day number\n\n')
-                else:
-                    break
-        
-        while True: #Asking the user for the category to be modified
-            index=input('Take a look to the list of the expenses you have inserted and choose the number relevant to the category\
-you want to modify: accomodation [1], transports [2], meals [3], souvenirs [4], unforseens [5]')
-            if len(index)<1:
-                print('You have inserted a blanck input, please provide a valid integer\n\n')
-            elif not index.isdigit():
-                print('You have insert a floating point number or a literal input, plese provide a valid integer\n\n')
-            else:
-                index=int(index)-1
-                if index in range(0,5):    
-                    break
-                else:
-                    print('The number doesn\'t match with any category, please enter a valid integer\n\n')
+        #Asking user for the day to be modified
+        days=list(range(1,trip_duration+1))
+        days=list(map(str,days))
+        day=input('Take a look to the list of the expenses you have inserted and choose the day you want to modify:')
+        while not day in days:
+            day=input('Please, provide a valid number of day:')
+        day=int(day)
+
+        #Asking the user for the category to be modified
+        category=input('Take a look to the list of the expenses you have inserted and choose the number relevant to the category you want to modify: accomodation [1], transports [2], meals [3], souvenirs [4], unforseens [5]')
+        while not category in ['1','2','3','4','5']:
+            category=input('Please, provide a valid number of category:')
+        category=int(category)
 
         #Asking the user for the new expense value
-        while True:
-            expense=input('Please, enter the new expense:')
-            if len(expense)<1:
-                print('You have inserted a blanck input, please provide a valid expense\n\n')
-            elif expense.isalpha():
-                print('You have inserted literal input, please provide a valid expense\n\n')
-            else:
-                expense=float(expense)
-                if expense<0:
-                    print('You have inserted a negative input, please provide a valid expense\n\n')
-                else:
-                    break
+        expense=input('Please, enter the new expense amount:')
+        while expense.count('.')>1 or not expense.strip('.').isdecimal():
+            expense=input('Please, enter a valid expense amount')
+        expense=round(float(expense),2)
 
-        #Updating the daily totals with new expense value
-        assignment='D{D}_TOT_EXP-=D{D}_{C}_EXP'.format(D=day,C=categories_abb[index])
-        exec(assignment)
-        assignment='D{}_{}_EXP={:.2f}'.format(day,categories_abb[index],expense)
-        exec(assignment)
-        assignment='D{}_TOT_EXP+={:.2f}'.format(day,expense)
-        exec(assignment)
-        for day in range(1,trip_duration+1):
-            daily_report='{}DAY {}\n'.format(daily_report,day)
-            for i in range(0,len(categories)):
-                daily_report='{}Expense for {}:{:.2f}\n'.format(daily_report,categories[i],eval('D{}_{}_EXP'.format(day,categories_abb[i])))
-            daily_report='{}Total expense for the day:{:.2f}\n\n'.format(daily_report,eval('D{}_TOT_EXP'.format(day)))
-    elif operation==2:
-        for day in range(1,trip_duration+1):
-            for category in categories_abb:
-                assignment='{C}_EXP+=D{D}_{C}_EXP'.format(C=category,D=day)
-                exec(assignment)
-        for category in categories_abb:
-            assignment='TOT_EXP+={}_EXP'.format(category)
-            exec(assignment)
+        #Performing the expense substitution
+        if category==1:
+            acc_exp[day-1]=expense
+        elif category==2:
+            tra_exp[day-1]=expense
+        elif category==3:
+            mea_exp[day-1]=expense
+        elif category==4:
+            sou_exp[day-1]=expense
+        else:
+            unf_exp[day-1]=expense
 
-        trip_balance=budget-TOT_EXP
+        #---Updating the daily report---#
+        daily_report='Accomodation: {}\nTransports: {}\nMeals: {}\nSouvenirs: {}\nUnforseens: {}\n\n'.format(acc_exp,tra_exp,mea_exp,sou_exp,unf_exp)
+    else:
+        #Daily totals calculation
+        for index in range(trip_duration):
+            acc_tot_exp+=acc_exp[index]
+            tra_tot_exp+=tra_exp[index]
+            mea_tot_exp+=mea_exp[index]
+            sou_tot_exp+=sou_exp[index]
+            unf_tot_exp+=unf_exp[index]
+        grd_tot_exp=acc_tot_exp+tra_tot_exp+mea_tot_exp+sou_tot_exp+unf_tot_exp
+
+        #Checking trip balance
+        trip_balance=budget-grd_tot_exp
         if trip_balance<0:
             balance_mex='You exceeded the trip budget of {:.2f}'.format(abs(trip_balance))
         elif trip_balance>0:
             balance_mex='You saved {:.2f}'.format(trip_balance)
         else:
             balance_mex='You spent the whole trip budget'
-        report='Here the report of your trip:\n\
-TOTAL EXPENSE: {:.2f}\n\
-ACCOMODATION EXPENSE: {:.2f}\n\
-TRANSPORT EXEPENSE: {:.2f}\n\
-MEAL EXPENSE: {:.2f}\n\
-SOUVENIRS EXPENSE: {:.2f}\n\
-UNFORSEENS EXPENSE: {:.2f}\n\
-\n\
-{}'.format(TOT_EXP,ACC_EXP,TRA_EXP,MEA_EXP,SOU_EXP,UNF_EXP,balance_mex)
-        print(report)
+
+        #Printing report
+        print('Here is the report of your trip:')
+        print('TOTAL EXPENSE: {:.2f}\nACCOMODATION EXPENSE: {:.2f}'.format(grd_tot_exp,acc_tot_exp))
+        print('TRANSPORT EXEPENSE: {:.2f}\nMEAL EXPENSE: {:.2f}'.format(tra_tot_exp,mea_tot_exp))
+        print('SOUVENIRS EXPENSE: {:.2f}\nUNFORSEENS EXPENSE: {:.2f}'.format(sou_tot_exp,unf_tot_exp))
+        print(balance_mex)
         break
