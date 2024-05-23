@@ -1,9 +1,9 @@
 from random import choice
+from math import floor
 
 coin_faces=['H','T']
-simulation_counter=0
 general_flip_counter=0
-while simulation_counter<10:
+for i in range(10):
     same_occurence_counter=0
     flip_counter=0
     previous_result=choice(coin_faces)
@@ -19,7 +19,7 @@ while simulation_counter<10:
             previous_result=result
     print('{} ({} flips)'.format(result_list,flip_counter))
     general_flip_counter+=flip_counter
-    simulation_counter+=1
-flip_average=general_flip_counter/10
-print('On average, {} flips were needed.'.format(flip_average))
+flip_average_floor=floor(general_flip_counter/10)
+flip_average_ceil=flip_average_floor+1
+print('On average, {} or {} flips were needed.'.format(flip_average_floor,flip_average_ceil))
 
