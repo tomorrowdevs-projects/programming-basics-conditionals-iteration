@@ -25,7 +25,7 @@ for n in range (totdays):
     totalprice += dailymeals[n]
     
 while True:
-    correct = input("Desideri correggere i valori immessi? Per favore rispondere con si o no: ").strip().lower()
+    correct = input("Desideri correggere i valori immessi? Per favore rispondere con si o no: ")
     if correct == "si":
         day_to_correct = int(input(f"Inserisci il numero del giorno da correggere (1-{days}): ")) - 1
         dailylodging[day_to_correct] = float(input("Affitto: "))
