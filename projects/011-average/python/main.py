@@ -20,7 +20,7 @@
 # average = sum(values) / len(values)
 
 
-print(f'The average of selected values is: {average:.2f}')
+# print(f'The average of selected values is: {average:.2f}')
 
 
 
